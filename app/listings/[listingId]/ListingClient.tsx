@@ -47,7 +47,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
             dates = [...dates, ...range]
         })
         return dates
-    }, [])
+    }, [reservations])
 
     const [isLoading, setIsLoading] = useState(false)
     const [totalPrice, setTotalPrice] = useState(listing.price)

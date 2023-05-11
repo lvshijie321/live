@@ -57,7 +57,7 @@ const RentModal = () => {
         return dynamic(() => import('../Map'), {
             ssr: false
         })
-    }, [location])
+    }, [])
 
     const [isLoading, setIsLoading] = useState(false)
 
@@ -110,7 +110,7 @@ const RentModal = () => {
             return undefined
         }
         return "Back"
-    }, [step])
+    }, [])
 
     let bodyContent = (
         <div className="flex flex-col gap-8">
