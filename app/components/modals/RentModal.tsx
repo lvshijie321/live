@@ -82,7 +82,7 @@ const RentModal = () => {
             return 'Create'
         }
         return 'Next'
-    }, [])
+    }, [step])
 
     const onSubmit: SubmitHandler<FieldValues> = (data) => {
         if (step !== STEPS.PRICE) {
@@ -110,7 +110,7 @@ const RentModal = () => {
             return undefined
         }
         return "Back"
-    }, [])
+    }, [step])
 
     let bodyContent = (
         <div className="flex flex-col gap-8">
